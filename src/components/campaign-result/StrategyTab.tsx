@@ -83,7 +83,7 @@ const mockStrategy: StrategyResult = {
   ],
   offers: [
     {
-      id: '1',
+      id: 1,
       type: 'discount',
       value: '20% 할인',
       description: '첫 구매 고객 한정 20% 할인',
@@ -92,7 +92,7 @@ const mockStrategy: StrategyResult = {
       reasoning: '신규 유입률 높고 재구매 전환 유도에 효과적. 마진 20% 수준 유지.',
     },
     {
-      id: '2',
+      id: 2,
       type: 'gift',
       value: '미니어처 증정',
       description: '본품 구매 시 10ml 미니어처 증정',
@@ -101,7 +101,7 @@ const mockStrategy: StrategyResult = {
       reasoning: '원가 부담 낮고 재구매 전환 효과 높음. SNS 언박싱 콘텐츠 유도.',
     },
     {
-      id: '3',
+      id: 3,
       type: 'set',
       value: '1+1',
       description: '2개 구매 시 30% 할인',
