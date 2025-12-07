@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💄 BeautyAI - 뷰티 마케팅 AI 플랫폼
 
-## Getting Started
+> 뷰티 브랜드를 위한 올인원 AI 마케팅 솔루션
 
-First, run the development server:
+BeautyAI는 뷰티/화장품 브랜드의 마케팅 캠페인 전 과정을 AI로 자동화하는 SaaS 플랫폼입니다. 제품 등록부터 캠페인 기획, 광고 카피 생성, 컴플라이언스 검수, 성과 분석까지 뷰티 산업에 특화된 마케팅 워크플로우를 제공합니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ 주요 기능
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🏠 대시보드
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 캠페인 현황 요약 (활성/대기/완료)
+- 주요 KPI 위젯 (ROAS, CTR, CVR, CPA)
+- 최근 활동 타임라인
+- 빠른 실행 버튼
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📦 제품 관리
 
-## Learn More
+- 뷰티 특화 제품 등록 (피부 고민, 성분, 텍스처)
+- 제품 카탈로그 관리
+- 브랜드/라인별 분류
+- 제품 상세 정보 및 이미지 관리
 
-To learn more about Next.js, take a look at the following resources:
+### 🚀 캠페인 관리
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **캠페인 생성 위저드** (5단계)
+  - Step 1: 기본 정보 설정
+  - Step 2: 타겟 오디언스 정의
+  - Step 3: 채널 & 예산 배분
+  - Step 4: AI 카피 생성
+  - Step 5: 리뷰 & 런칭
+- 캠페인 목록 및 상태 관리
+- 캠페인 상세 분석 대시보드
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🤖 AI 카피 생성
 
-## Deploy on Vercel
+- 플랫폼별 최적화 (Meta, Google, Naver, Kakao, TikTok)
+- 톤앤매너 커스터마이징
+- 실시간 컴플라이언스 검사
+- A/B 테스트 변형 자동 생성
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ✅ 컴플라이언스 체크
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 화장품 광고 규제 자동 검수
+- 금지 표현 탐지 및 대체 문구 제안
+- 플랫폼별 가이드라인 검증
+- 법적 리스크 점수화
+
+### 📊 성과 리포트
+
+- 채널별 성과 지표 입력
+- AI 기반 원인 분석 및 가설 도출
+- 다음 액션 아이템 자동 생성
+- PDF 리포트 내보내기
+
+### 📁 소재/자산 관리
+
+- 리뷰 수집 및 자동 태깅
+- 레퍼런스 링크 저장
+- AI 후킹 문장 추출
+- 부정 리뷰 → FAQ 자동 생성
+
+### 📚 뷰티 템플릿
+
+- 카테고리별 캠페인 템플릿
+  - 트러블/진정 런칭
+  - 레티놀 입문 캠페인
+  - 선케어 시즌 캠페인
+  - 미백/톤업 (표현 가드레일 포함)
+  - 보습/장벽 강화
+  - 모공/피지 케어
+- 원클릭 브리프 자동 설정
+- 베스트 프랙티스 가이드
+
+### 💳 결제/플랜 관리
+
+- 4단계 요금제 (Free, Starter, Pro, Enterprise)
+- 사용량 대시보드
+- 결제 내역 관리
+
+---
+
+## 🛠 기술 스택
+
+### Frontend
+
+| 기술         | 버전  | 용도             |
+| ------------ | ----- | ---------------- |
+| Next.js      | 15.x  | React 프레임워크 |
+| TypeScript   | 5.x   | 타입 안정성      |
+| Tailwind CSS | 3.4.x | 스타일링         |
+| Mantine UI   | 7.x   | UI 컴포넌트      |
+
+### Backend
+
+| 기술                    | 용도                         |
+| ----------------------- | ---------------------------- |
+| Supabase                | 인증, 데이터베이스, 스토리지 |
+| Supabase Edge Functions | 서버리스 API                 |
+| PostgreSQL              | 데이터베이스                 |
+| OpenAI API              | AI 카피 생성                 |
+
+### DevOps
+
+| 기술   | 용도           |
+| ------ | -------------- |
+| Vercel | 호스팅 & CI/CD |
+
+---
+
+## 📄 라이선스
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  Made with 💜 by BeautyAI Team
+</p>
